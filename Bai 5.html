@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let kt = +prompt('Nhập điểm kiểm tra')
+  let gk = +prompt('Nhập điểm thi giưa kỳ')
+  let ck = +prompt('Nhập điểm kiểm tra cuối kỳ')
+
+  let tb = (kt + gk + ck) / 3
+
+  if (tb >= 8.5){
+    alert('Học lực giỏi')
+  }else if (tb >= 6.5){
+    alert('Học lực khá')
+  }else if (tb >= 4){
+    alert('Học lực trung bình')
+  }else {
+    alert('Đúp')
+  }
+</script>
+</body>
+</html>

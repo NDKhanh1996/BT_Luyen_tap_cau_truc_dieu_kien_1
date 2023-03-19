@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let time = +prompt('Nhập thời gian gọi ( đơn vị phút)')
+  let hs;
+  switch (true) {
+    case (time >= 1000):
+      hs = 0.03
+      break;
+    case (time >= 2000):
+      hs = 0.02
+      break;
+    case (time >= 3000):
+      hs = 0.01
+      break;
+    case (time >= 0):
+      hs = 0.005
+  }
+  alert('Tổng cước là ' + (hs * time * 1000).toLocaleString() + ' VND')
+</script>
+</body>
+</html>

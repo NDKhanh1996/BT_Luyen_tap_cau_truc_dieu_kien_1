@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt('Nhập doanh số bán hàng ( đơn vị $)')
+    let rose;
+    switch (true) {
+        case (money >= 12000):
+            rose = 0.03
+            break;
+        case (money >= 8000):
+            rose = 0.02
+            break;
+        case (money >= 4000):
+            rose = 0.01
+            break;
+        default:
+            rose = 0
+    }
+    alert('Hoa hồng nhận dc là ' + rose * money)
+</script>
+</body>
+</html>
